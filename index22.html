@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Arraiá da Turma 1ºA</title>
+  <style>
+    body {
+      background-color: #fff3cd;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #d62828;
+      font-size: 2.5em;
+    }
+
+    .bandeirinhas {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .bandeira {
+      width: 30px;
+      height: 40px;
+      background-color: #0077b6;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    }
+
+    .balao {
+      width: 40px;
+      height: 60px;
+      background-color: #ff006e;
+      border-radius: 50% 50% 40% 40%;
+      margin: 10px auto;
+      position: relative;
+    }
+
+    .balao::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 2px;
+      height: 10px;
+      background-color: #333;
+    }
+
+    .fogueira {
+      margin: 30px auto;
+    }
+
+    .fogueira img {
+      width: 100px;
+    }
+
+    .texto {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 100px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Arraiá da Turma 1ºA 🎉</h1>
+
+  <div class="bandeirinhas">
+    <div class="bandeira"></div>
+    <div class="bandeira" style="background-color:#f77f00;"></div>
+    <div class="bandeira" style="background-color:#90be6d;"></div>
+    <div class="bandeira" style="background-color:#f72585;"></div>
+  </div>
+
+  <div class="balao"></div>
+
+  <div class="fogueira">
+    <img src="https://i.gifer.com/YZ4p.gif" alt="Fogueira animada">
+  </div>
+
+  <div class="texto">
+    <h2>📜 História da Festa</h2>
+    <p>A Festa Junina é uma tradição brasileira que celebra São João com muita alegria, danças e comidas típicas.</p>
+
+    <h2>🎊 Tradições</h2>
+    <p>Tem quadrilha, casamento caipira, brincadeiras e muita diversão!</p>
+
+    <h2>🍽️ Comidas Típicas</h2>
+    <p>Milho cozido, canjica, pamonha, bolo de fubá, pé-de-moleque e muito mais!</p>
+  </div>
+
+  <h2>🔊 Música de Fundo</h2>
+  <audio controls autoplay loop>
+   <source src="audio/videoplayback.mp3" type="audio/mp3">
+</audio>
+
+  <h2>🖼️ Galeria</h2>
+  <div class="galeria">
+    <img src="https://cdn-icons-png.flaticon.com/512/4967/4967626.png" alt="Caipira">
+    <img src="https://cdn-icons-png.flaticon.com/512/4967/4967652.png" alt="Bandeirinhas">
+  </div>
+</body>
+</html>
